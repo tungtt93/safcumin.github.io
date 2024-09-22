@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <meta name="description" content="Xuan Tuan System">
+    <meta name="keywords" content="">
+    <meta name="author" content="Xuan Tuan System">
+    
+    <title>Safcumin</title>
+    <link rel="shortcut icon" href="https://drxuantuan.com/img/brand/favicon.ico" />
+
+    <meta property="og:locale" content="vi" />
+    <meta property="og:title" content="Trang chủ" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://drxuantuan.com" />
+    <meta property="og:image" content="https://drxuantuan.com/">
+    <meta property="og:description" content="" />
+    <meta property="og:site_name" content="https://drxuantuan.com" />
+
+    <!-- Tailwind CSS -->
+    <link rel="stylesheet" href="./dist/output.css">
+    <!-- Font Awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Google Fonts - Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #ffd600;
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col">
+    <!-- Header -->
+    <header class="bg-white shadow-md">
+        <div class="container mx-auto px-4 py-4 flex items-center justify-between md:justify-start">
+            <div class="flex items-center gap-4 w-full md:justify-start justify-center">
+                <img src="https://drxuantuan.com/img/brand/favicon.ico" alt="Logo" class="h-10 w-auto">
+                <h1 class="text-2xl font-bold">Safcumin</h1>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="flex-grow container mx-auto px-4 py-8">
+        <section class="mb-12">
+            <div class="flex flex-col md:flex-row gap-8">
+                <div class="md:w-1/2">
+                    <div class="bg-gray-200 h-96 flex items-center justify-center">
+                        <p>Product Image Carousel</p>
+                    </div>
+                </div>
+                <div class="md:w-1/2">
+                    <h2 class="text-3xl font-bold mb-2">Tên sản phẩm</h2>
+                    <div class="text-xl font-semibold mb-2">
+                        <div><span>Giá gốc: </span><span class="line-through">1.000.000đ</span></div>
+                        <p class="text-xl font-semibold text-red-600">Giá ưu đãi: 800.000đ</p>
+                    </div>
+                    <!-- <div class="mb-4">
+                        <label for="quantity" class="block mb-2">Số lượng:</label>
+                        <input type="number" id="quantity" min="1" value="1" class="border rounded px-2 py-1">
+                    </div> -->
+                    <div class="flex flex-col mb-4 space-y-2">
+                        <button 
+                            class="flex-1 min-w-[200px] transition ease-in-out delay-150 bg-blue-600 text-white px-6 py-2 rounded-md hover:bg-blue-700 hover:-translate-y-1 hover:scale-105 duration-300"
+                            onclick="window.open('https://zalo.me/84988579136', '_blank')" 
+                        >
+                            Mua hàng qua zalo
+                        </button>
+                        <button 
+                            class="flex-1 min-w-[200px] transition ease-in-out delay-150 bg-blue-600 text-white px-6 py-2 rounded-md hover:bg-blue-700 hover:-translate-y-1 hover:scale-105 duration-300"
+                            onclick="window.open('https://m.me/104001695014648', '_blank')" 
+                        >
+                            Mua hàng qua messenger
+                        </button>
+                    </div>
+                    <div class="flex flex-wrap items-center space-x-4 mb-4">
+                        <a href="https://www.facebook.com/drTuanNX" target="_blank" class="text-2xl text-[#1877F2] hover:opacity-80"><i class="fab fa-facebook"></i></a>
+                        <a href="https://m.me/104001695014648" target="_blank" class="text-2xl text-[#0099FF] hover:opacity-80"><i class="fab fa-facebook-messenger"></i></a>
+                        <a href="https://zalo.me/84988579136" target="_blank" class="hover:opacity-80">
+                            <img src="./static/zalo-icon.webp" alt="Zalo bác sĩ Nguyễn Xuân Tuấn" class="w-6 h-6">
+                        </a>
+                        <a href="https://www.facebook.com/groups/songkhoecungdrxuantuan" target="_blank" class="text-2xl text-[#1877F2] hover:opacity-80"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.tiktok.com/" target="_blank" class="text-2xl text-[#000000] hover:opacity-80"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                    <div class="space-y-4 text-sm">
+                        <p><i class="fas fa-truck mr-2"></i> <strong>Miễn phí giao hàng</strong> cho tất cả đơn hàng từ 30.000.000đ</p>
+                        <p><i class="fas fa-exchange-alt mr-2"></i> Để xem chính sách Đổi hàng & Trả hàng/Hoàn tiền đầy đủ của chúng tôi <strong><a href="#" class="text-blue-600 hover:underline">Nhấn vào đây</a></strong>
+                        </p>
+                        <p><i class="fas fa-shield-alt mr-2"></i> <strong>Bảo hành 12 tháng</strong> cho tất cả sản phẩm</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: Product Details -->
+        <section id="product-details">
+            <h3 class="text-2xl font-bold mb-4">Thông tin sản phẩm</h3>
+            <div class="space-y-4">
+                <!-- Collapsible sections -->
+                <div class="border-b pb-2">
+                    <button class="flex justify-between items-center w-full text-left font-semibold uppercase">
+                        Thông tin chi tiết
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="hidden mt-2">
+                        <!-- Add content here -->
+                    </div>
+                </div>
+                <div class="border-b pb-2">
+                    <button class="flex justify-between items-center w-full text-left font-semibold uppercase">
+                        Công dụng
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="hidden mt-2">
+                        <p>Hỗ trợ giảm acid dịch vị, giúp bảo vệ niêm mạc dạ dày. Hỗ trợ giảm các triệu chứng: đau bụng, đầy bụng, ợ hơi, ợ chua do viêm loét dạ dày, tá tràng.</p>
+                    </div>
+                </div>
+                <div class="border-b pb-2">
+                    <button class="flex justify-between items-center w-full text-left font-semibold uppercase">
+                        Đối tượng sử dụng
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="hidden mt-2">
+                        <p>Trẻ em từ 12 tuổi trở lên và người lớn bị viêm loét dạ dày, tá tràng có các triệu chứng: đau bụng, đầy bụng, ợ hơi, ợ chua do viêm loét dạ dày, tá tràng.</p>
+                    </div>
+                </div>
+                <div class="border-b pb-2">
+                    <button class="flex justify-between items-center w-full text-left font-semibold uppercase">
+                        Thành phần
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="hidden mt-2 space-y-2">
+                        <div>
+                            <p class="mb-2">Trong mỗi 10ml có chứa:</p>
+                            <ul class="list-disc pl-6 space-y-2">
+                                <li class="flex justify-between">
+                                    <span>Cao Lá Khôi (Ardisia silvestris)</span>
+                                    <span class="font-semibold">800mg</span>
+                                </li>
+                                <li class="flex justify-between">
+                                    <span>Curcumin 10%</span>
+                                    <span class="font-semibold">400mg</span>
+                                </li>
+                                <li class="flex justify-between">
+                                    <div>
+                                        <span>Cao Rễ Cam thảo (Glycyrrhiza uralensis)</span><br />
+                                        <span class="text-sm text-gray-500">(tương đương Rễ cam thảo 2g)</span>
+                                    </div>
+                                    <span class="font-semibold">200mg</span>
+                                </li>
+                                <li class="flex justify-between">
+                                    <div>
+                                        <span>Cao Lá Dạ cẩm (Oldenlandia eapitellata)</span><br />
+                                        <span class="text-sm text-gray-500">(tương đương Lá Dạ cẩm 1,6g)</span>
+                                    </div>
+                                    <span class="font-semibold">160mg</span>
+                                </li>
+                                <li class="flex justify-between">
+                                    <div>
+                                        <span>Cao Lá Chè dây (Ampelopsis cantoniensis)</span><br />
+                                        <span class="text-sm text-gray-500">(tương đương Lá Chè dây 1g)</span>
+                                    </div>
+                                    <span class="font-semibold">100mg</span>
+                                </li>
+                                <li class="flex justify-between">
+                                    <div>
+                                        <span>Bột chiết xuất Nhuỵ hoa nghệ tây (Saffron) (Crocus sativus)</span><br />
+                                        <span class="text-sm text-gray-500">(tương đương Nhuỵ hoa nghệ tây 0,9g)</span>
+                                    </div>
+                                    <span class="font-semibold">90mg</span>
+                                </li>
+                                <li class="flex justify-between">
+                                    <div>
+                                        <span>Cao Thân rễ Nghệ đen (Curcuma zedoaria)</span><br />
+                                        <span class="text-sm text-gray-500">(tương đương Thân rễ Nghệ đen 0,5g)</span>
+                                    </div>
+                                    <span class="font-semibold">50mg</span>
+                                </li>
+                                <li class="flex justify-between">
+                                    <div>
+                                        <span>Curcumin phospholipid</span><br />
+                                        <span class="text-sm text-gray-500">(tương đương Curcuminoids 1mg)</span>
+                                    </div>
+                                    <span class="font-semibold">5mg</span>
+                                </li>
+                                <li class="flex justify-between">
+                                    <div>
+                                        <span>Bột chiết xuất Rễ củ Hồng sâm (Panax ginseng)</span><br />
+                                        <span class="text-sm text-gray-500">(tương đương Rễ củ hồng sâm 50mg)</span>
+                                    </div>
+                                    <span class="font-semibold">5mg</span>
+                                </li>
+                                <li class="flex justify-between">
+                                    <div>
+                                        <span>Cao Củ Gừng (Zingiber officinale)</span><br />
+                                        <span class="text-sm text-gray-500">(tương đương Củ Gừng 40mg)</span>
+                                    </div>
+                                    <span class="font-semibold">4mg</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <p>
+                            <span class="italic">Phụ liệu: </span>Chất tạo ngọt tự nhiên (saccharose), chất tạo ngọt tổng hợp (sucralose), chất điều chỉnh độ acid (Acid citric), chất ổn định (xanthan gum), chất làm ẩm (sorbitol, glycerin), chất nhũ hóa (propylene glycol), chất ổn định (Dinatri ethylendiamintetra acetat (EDTA)), hương liệu tổng hợp (hương sữa, hương mật ong, hương sâm, hương caramel), nước tinh khiết.
+                        </p>
+                        <p>
+                            <span class="italic">Dạng bào chế: </span>hỗn dịch
+                        </p>
+                    </div>
+                </div>
+                <div class="border-b pb-2">
+                    <button class="flex justify-between items-center w-full text-left font-semibold uppercase">
+                        Cách dùng
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="hidden mt-2">
+                        <p>Trẻ em từ 12 tuổi trở lên và người lớn: uống 10ml/lần x 2 lần/ngày.</p>
+                    </div>
+                </div>
+                <div class="border-b pb-2">
+                    <button class="flex justify-between items-center w-full text-left font-semibold uppercase">
+                        Lưu ý
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="hidden mt-2">
+                        <p>Thực phẩm này không phải là thuốc, không có tác dụng thay thế thuốc chữa bệnh. Không sử dụng cho phụ nữ có thai, người mẫn cảm, kiêng kỵ, với bất kỳ thành phần nào của sản phẩm. Người đang dùng thuốc tham khảo ý kiến chuyên gia y tế trước khi sử dụng.</p>
+                    </div>
+                </div>
+                <div class="border-b pb-2">
+                    <button class="flex justify-between items-center w-full text-left font-semibold uppercase">
+                        Bảo quản
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="hidden mt-2">
+                        <p>Nơi khô ráo, thoáng mát, tránh ánh nắng trực tiếp. Để xa tầm tay trẻ em.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-6">
+                <ul class="list-disc space-y-2">
+                    <li class="flex justify-between">
+                        <span>LSX: </span><br />
+                        <span>Tiêu chuẩn: TCCS</span>
+                    </li>
+                    <li class="flex justify-between">
+                        <span>NSX: </span><br />
+                        <span>Số ĐKSP: 5513/2024/ĐKSP</span>
+                    </li>
+                    <li class="flex justify-between">
+                        <span>HSD: </span><br />
+                        <span>Xuất xứ: Việt Nam</span>
+                    </li>
+                    <li class="flex justify-between">
+                        <span>Công ty công bố: </span><br />
+                        <span>CÔNG TY TNHH Y TẾ PROSANTÉ VIỆT NAM</span>
+                    </li>
+                    <li class="flex justify-between">
+                        <span>Công ty sản xuất: </span><br />
+                        <span>CÔNG TY CỔ PHẦN DƯỢC PHẨM TRUNG ƯƠNG VIHECO</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between">
+                <div class="mb-4 md:mb-0">
+                    <h4 class="text-xl font-bold mb-2">Thông tin công ty</h4>
+                    <p>Địa chỉ: 123 Đường ABC, Thành phố XYZ</p>
+                    <p>Điện thoại: (123) 456-7890</p>
+                    <p>Email: info@company.com</p>
+                </div>
+                <div>
+                    <h4 class="text-xl font-bold mb-2">Kết nối với chúng tôi</h4>
+                    <div class="flex flex-wrap space-x-4">
+                        <a href="#" class="text-2xl hover:text-blue-400"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-2xl hover:text-pink-400"><i class="fab fa-tiktok"></i></a>
+                        <a href="#" class="text-2xl hover:text-blue-300"><i class="fab fa-zalo"></i></a>
+                        <a href="#" class="text-2xl hover:text-blue-500"><i class="fab fa-facebook-messenger"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Add JavaScript for collapsible sections
+        document.querySelectorAll('#product-details button').forEach(button => {
+            button.addEventListener('click', () => {
+                const content = button.nextElementSibling;
+                content.classList.toggle('hidden');
+                button.querySelector('i').classList.toggle('fa-chevron-up');
+                button.querySelector('i').classList.toggle('fa-chevron-down');
+            });
+        });
+    </script>
+</body>
+</html>

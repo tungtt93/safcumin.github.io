@@ -1,0 +1,15 @@
+{
+  "name": "safcumin",
+  "version": "1.0.0",
+  "description": "safcumin",
+  "main": "index.js",
+  "scripts": {
+    "build": "tailwindcss -i ./css/input.css -o ./dist/output.css",
+    "watch": "tailwindcss -i ./css/input.css -o ./dist/output.css --watch"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.12"
+  },  
+  "author": "tungtt93",
+  "license": "ISC"
+}
